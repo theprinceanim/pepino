@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Pepino</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="main_title">Trendy &amp; Vintage Fashion Items</string>
+    <string name="sub_title">Buy &amp; Sell pre-owned fashion luxury items</string>
+    <string name="sell">Click to Sell</string>
+    <string name="continue_send">Continue</string>
+    <string name="sell_text_instruction">
+        How it works:
+     </string>
+    <string name="instruction1">
+        - Click on "CONTINUE" to send us a request to list your luxury fashion items on Pepino
+    </string>
+    <string name="instruction2">
+        - Provide the name of the item, condition and at least one picture on a white background
+    </string>
+    <string name="instruction3">
+        - Provide your account details including your name and phone number
+    </string>
+    <string name="instruction4">
+        - Send
+    </string>
+    <string name="instruction5">
+        - We will review your request and list it if it meets our criteria
+    </string>
+    <string name="instruction6">
+         - Upon purchase, you have 48 hours to send the item to the address sent you by us
+    </string>
+    <string name="instruction7">
+         - Payment will be made into your account within 72 hours on your item purchase
+    </string>
+    <string name="instruction8">
+          - NOTE: Buyers have 24 hours to file for return
+    </string>
+    <string name="thankYou">
+        Thank You!
+    </string>
+
+    <string name="buyinstruction1">
+        - Click on "Continue To Buy"
+    </string>
+    <string name="buyinstruction2">
+        - Enter the name of the items you want to purchase, with your phone number
+    </string>
+    <string name="buyinstruction3">
+        - A confirmation will be sent to you within 24 hours on purchase
+    </string>
+    <string name="buyinstruction4">
+        - Pay via the mobile money account sent you
+    </string>
+    <string name="buyinstruction5">
+        - Item will be received within 48 hours after confirmation
+    </string>
+    <string name="buy">
+        Buy
+    </string>
+    <string name="continuebuy">
+        Continue To Buy
+    </string>
+    <string name="sharemessage">Exciting! Check out these super cool luxury fashion items at very affordable prices. Get pepino on the PlayStore now</string>
+    <string name="text">TextView</string>
+
+
+</resources>

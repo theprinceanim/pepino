@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adapter creates the views using the format in this layout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/shoeImageView"
+        android:layout_gravity="start"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/shoeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:textSize="15sp"
+        android:layout_alignBottom="@+id/shoeImageView"
+        android:layout_alignParentRight="true"
+        android:text="TextView"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:id="@+id/shoePriceView"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+
+        />
+
+
+</RelativeLayout>
