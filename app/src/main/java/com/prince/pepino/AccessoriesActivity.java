@@ -2,8 +2,11 @@ package com.prince.pepino;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -18,6 +21,51 @@ public class AccessoriesActivity extends ActionBarActivity {
     public static String[] accMainList = {"IvyBlue Earring", "Mercedez Watch", "Hermes Bracelet", "Metal-Wood Bracelet", "Top SHop Bangles", "MK shades","Cartier Gold Necklace", "Yaqin Watch", "Hook and tie bracelet", "Butterfly Brooche"};
     public static String[] accPriceList = {"$10", "$20", "$25", "$15", "$10", "$20", "$15", "$10", "$18", "$12"};
     public static int[] accMainIcons = {R.drawable.bluestone, R.drawable.watch2 , R.drawable.hermes, R.drawable.menbracelet, R.drawable.ponobangles, R.drawable.shades, R.drawable.statementchoker, R.drawable.watch, R.drawable.fashaccessories1,  R.drawable.brooche};
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+
+        return true;
+
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+//        else
+        if(id == R.id.share){
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, " ");
+            sharingIntent.putExtra(Intent.EXTRA_TEXT,
+                    getString(R.string.sharemessage));
+            startActivity(Intent.createChooser(sharingIntent, "Share via"));
+        }
+
+        else if(id == R.id.call){
+            call();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void call() {
+        String number = "0246325632";
+
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("tel:" + number));
+        startActivity(callIntent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

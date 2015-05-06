@@ -22,17 +22,20 @@
         android:contentDescription="Nice Image" />
 
     <TextView
-        android:id="@+id/singleBagText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
-
-
-    <TextView
         android:id="@+id/singleBagText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="15dp"
         />
+    <TextView
+        android:id="@+id/singleBagText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        />
+
+
+
 
     <Button
         android:id="@+id/buyBtn"

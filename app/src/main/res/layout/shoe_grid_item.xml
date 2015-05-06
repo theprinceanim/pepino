@@ -2,7 +2,9 @@
 <!-- Adapter creates the views using the format in this layout -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
 
     <ImageView
         android:id="@+id/shoeImageView"
@@ -17,6 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="140dp"
         android:textSize="15sp"
+        android:layout_marginRight="12dp"
         android:layout_alignBottom="@+id/shoeImageView"
         android:layout_alignParentRight="true"
         android:text="TextView"
@@ -26,10 +29,29 @@
         android:layout_width="wrap_content"
         android:layout_height="140dp"
         android:id="@+id/shoePriceView"
+        android:layout_marginRight="12dp"
+        android:textColor="#990012"
         android:textSize="15sp"
         android:layout_alignParentRight="true"
 
         />
+    <ImageView
+        android:layout_marginTop="65dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/accArrowView"
+        android:textSize="15sp"
+        android:background="@drawable/arrow"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D4DED9"
+        android:layout_below="@+id/shoeImageView"/>
 
 
 </RelativeLayout>
